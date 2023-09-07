@@ -1,1 +1,3 @@
-console.log('working correct');
+import initialisePage from './webpage.js';
+
+initialisePage();
