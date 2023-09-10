@@ -13,7 +13,7 @@ navbar
 footer contains
 copyright
 
-main contains
+home contains
 small blurb about restaurant
 background image of some thai/wok chef
 

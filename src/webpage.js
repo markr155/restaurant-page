@@ -1,3 +1,7 @@
+import loadHome from './home.js';
+import loadMenu from './menu.js';
+import loadAboutUs from './about-us.js';
+
 function createHeader() {
     const header = document.createElement('div');
     header.classList.add('header');
@@ -22,9 +26,9 @@ function createNavBar() {
 };
 
 function createMain() {
-    const mainContainer = document.createElement('div');
-    mainContainer.setAttribute('id', 'main');
-    return mainContainer;
+    const main = document.createElement('div');
+    main.setAttribute('id', 'main');
+    return main;
 };
 
 function createFooter() {
@@ -41,6 +45,7 @@ function initialisePage() {
     content.appendChild(createHeader());
     content.appendChild(createMain());
     content.appendChild(createFooter());
+    loadHome();
 };
 
 
