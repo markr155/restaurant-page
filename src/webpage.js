@@ -5,7 +5,6 @@ import loadAboutUs from './about-us.js';
 function createHeader() {
     const header = document.createElement('div');
     header.classList.add('header');
-
     const heading = document.createElement('h1');
     heading.textContent = "Noi's Thai Restaurant";
     header.appendChild(heading);
