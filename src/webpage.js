@@ -1,10 +1,3 @@
-function initialisePage() {
-    const content = document.getElementById('content');
-    content.appendChild(createHeader());
-    // content.appendChild(createMain());
-    // content.appendChild(createFooter());
-};
-
 function createHeader() {
     const header = document.createElement('div');
     header.classList.add('header');
@@ -21,6 +14,13 @@ function createMain() {
 
 function createFooter() {
     console.log('footer');
+};
+
+function initialisePage() {
+    const content = document.getElementById('content');
+    content.appendChild(createHeader());
+    // content.appendChild(createMain());
+    // content.appendChild(createFooter());
 };
 
 
