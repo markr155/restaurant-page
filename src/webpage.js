@@ -1,9 +1,27 @@
 function initialisePage() {
-    content = document.querySelector('#content');
-
-    document.appendChild(createHeader());
-    document.appendChild(createMain());
-    document.appendChild(createFooter());
+    const content = document.getElementById('content');
+    content.appendChild(createHeader());
+    // content.appendChild(createMain());
+    // content.appendChild(createFooter());
 };
+
+function createHeader() {
+    const header = document.createElement('div');
+    header.classList.add('header');
+
+    const heading = document.createElement('h1');
+    heading.textContent = "Noi's Thai Restaurant";
+    header.appendChild(heading);
+    return header;
+};
+
+function createMain() {
+    console.log('main');
+};
+
+function createFooter() {
+    console.log('footer');
+};
+
 
 export default initialisePage;

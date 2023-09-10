@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _web
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction initialisePage() {\n    console.log('eyo');\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initialisePage);\n\n//# sourceURL=webpack://restaurant-page/./src/webpage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction initialisePage() {\n    const content = document.getElementById('content');\n\n    content.appendChild(createHeader());\n    // content.appendChild(createMain());\n    // content.appendChild(createFooter());\n};\n\nfunction createHeader() {\n    const header = document.createElement('div');\n    header.classList.add('header');\n\n    // const heading = document.createElement('h1');\n    // heading.textContent = \"Noi's Thai Restaurant\";\n    return header;\n};\n\nfunction createMain() {\n    console.log('main');\n};\n\nfunction createFooter() {\n    console.log('footer');\n};\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initialisePage);\n\n//# sourceURL=webpack://restaurant-page/./src/webpage.js?");
 
 /***/ })
 
