@@ -1,20 +1,46 @@
+:root{
+    --background-blur: rgba(0, 0, 0, 0.65);
+    --text-colour: white;
+    --containerMargin: 2em 0;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
 #content {
-    display: grid;
-    grid-template-rows: 2fr 10fr 1fr;
-    height: 100vh;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    color: var(--text-colour);
     background: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #main {
-    flex-grow: 0;
-    max-width: 50%;
+    background-color: var(--background-blur);
+    margin: var(--containerMargin);
+    padding: 0 10vw;
+    flex: 1;
 }
 
 #chef-image {
-    height: 600px;
+    max-height: 500px;
+    border-radius: 50%;
+}
+
+.header {
+    background-color: var(--background-blur);
+    width: 100%;
+    padding: 4vh 0;
 }
 
 .footer {
-    position: bottom;
+    background-color: var(--background-blur);
+    width: 100%;
 }
