@@ -30,5 +30,4 @@ hours available
 location & image showing location
 
 do next:
-add navbar functionality
 menu and about us content

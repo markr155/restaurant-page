@@ -14,10 +14,15 @@ function createHeader() {
 
 function createNavBar() {
     const navBar = document.createElement('div');
-    const navButtons = ['Home', 'Menu', 'About Us'];
-    navButtons.forEach(button => {
+    //button id: button name
+    const navButtons = {
+        home: 'Home',
+        menu: 'Menu', 
+        aboutUs: 'About Us'};
+    Object.keys(navButtons).forEach(id => {
         const newButton = document.createElement('button');
-        newButton.textContent = button;
+        newButton.textContent = navButtons[id];
+        newButton.id = id;
         newButton.classList.add('nav-button');
         navBar.appendChild(newButton);
     });
