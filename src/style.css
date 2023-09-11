@@ -25,7 +25,7 @@ body {
 #main {
     background-color: var(--background-blur);
     margin: var(--containerMargin);
-    padding: 0 10vw;
+    width: 50%;
     flex: 1;
 }
 
@@ -43,4 +43,8 @@ body {
 .footer {
     background-color: var(--background-blur);
     width: 100%;
+}
+
+.menu-item-image {
+    max-width: 50%;
 }

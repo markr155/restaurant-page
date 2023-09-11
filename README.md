@@ -20,7 +20,6 @@ background image of some thai/wok chef
 menu contains
 entrees
 mains
-dessert
     items contain name, price, description, image
         add item via function
 
