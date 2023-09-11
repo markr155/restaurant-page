@@ -30,3 +30,5 @@ location & image showing location
 
 do next:
 menu and about us content
+font
+button styling
